@@ -6,3 +6,6 @@ See [this page](https://mau-webb.github.io/resurser/da395b-vt26/6-utvecklingsmet
 
 ## Additional text
 Här skulle jag prova skriva in lite mer text och sedan skicka upp till Git!
+
+##TEST
+TEST
