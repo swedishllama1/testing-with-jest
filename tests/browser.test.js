@@ -46,6 +46,6 @@ test('ska visa vad vi pushade på skärmen', async () => {
 
     let display = await driver.findElement(By.id('top_of_stack')).getText();
 
-    // Nu förväntar vi oss ett annat ord än vad vi skrev in
-    expect(display).toEqual("Korv");
+    // Nu förväntar vi oss samma ord som vi skrev in
+    expect(display).toEqual("Kaffe");
 });

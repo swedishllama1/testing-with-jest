@@ -22,6 +22,6 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('kontrollera att rätt siffra hamnar överst på stacken', () => {
     stack.push(10); // lägger till 10
     
-    //förväntar oss att 99 ska komma överst, vilket är fel
-    expect(stack.peek()).toBe(99); 
+    //förväntar oss att 10 ska komma överst som förhoppnignsvis är rätt
+    expect(stack.peek()).toBe(10); 
 });
