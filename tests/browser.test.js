@@ -34,3 +34,18 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+//end-to-end-test med Selenium, där du testar något på webbsidan
+test('ska visa vad vi pushade på skärmen', async () => {
+    let pushButton = await driver.findElement(By.id('push'));
+    await pushButton.click();
+
+    let alert = await driver.switchTo().alert();
+    await alert.sendKeys("Kaffe");
+    await alert.accept();
+
+    let display = await driver.findElement(By.id('top_of_stack')).getText();
+
+    // Nu förväntar vi oss ett annat ord än vad vi skrev in
+    expect(display).toEqual("Korv");
+});
